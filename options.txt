@@ -15,7 +15,7 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:true
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:false
 toggleCrouch:false
 toggleSprint:false
@@ -36,7 +36,7 @@ simulationDistance:5
 entityDistanceScaling:1.5
 guiScale:3
 particles:1
-maxFps:260
+maxFps:240
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
@@ -46,7 +46,7 @@ resourcePacks:["vanilla","mod_resources","firmalife_data","file/Vexxed_Visuals_T
 incompatibleResourcePacks:["firmalife_data","file/Vexxed_Visuals_TFCTNG_v1.0.3"]
 lastServer:
 lang:en_us
-soundDevice:"OpenAL Soft on Speakers (Realtek(R) Audio)"
+soundDevice:"OpenAL Soft on VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)"
 chatVisibility:0
 chatOpacity:0.7323943661971831
 chatLineSpacing:0.0
@@ -59,15 +59,15 @@ overrideWidth:0
 overrideHeight:0
 chatHeightFocused:1.0
 chatDelay:0.1
-chatHeightUnfocused:0.4375
+chatHeightUnfocused:1.0
 chatScale:1.0
-chatWidth:1.0
+chatWidth:0.6455399061032865
 notificationDisplayTime:1.0
 mipmapLevels:4
 useNativeTransport:true
 mainHand:"right"
 attackIndicator:0
-narrator:2
+narrator:0
 tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true

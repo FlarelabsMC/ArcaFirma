@@ -14,7 +14,27 @@ customization {
 }
 
 customization {
-  identifier = %id=345184%
+  identifier = %id=345304%
   action = hidebutton
+}
+
+customization {
+  identifier = %id=505154%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=345154%
+  orientation = top-centered
+  x = -155
+  action = movebutton
+  y = 50
+}
+
+customization {
+  identifier = %id=345154%
+  width = 310
+  action = resizebutton
+  height = 20
 }
 

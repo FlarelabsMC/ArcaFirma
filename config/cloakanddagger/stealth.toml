@@ -5,10 +5,10 @@
 #Range: 0.0 ~ 100.0
 "luck stealth" = 0.5
 #whether you must pass stealth checks to perceive a mob. Currently rather incomplete. I am not responsible for ragequits caused by this option. This physically ceases to work with Optifine installed.
-"use player senses" = false
+"use player senses" = true
 #angle of detection on the xz plane
 #Range: 0 ~ 360
-"default mob horizontal FoV" = 120
+"default mob horizontal FoV" = 160
 #angle of detection on the y axis
 #Range: 0 ~ 360
 "default mob vertical FoV" = 60
