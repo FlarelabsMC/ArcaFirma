@@ -1,0 +1,7 @@
+
+[general]
+	#Force creation of canoes from specified wood types.
+	canoeWoodRestriction = true
+	#Force reduceDebugInfo gamerule.
+	forceReducedDebugInfo = true
+

@@ -1,0 +1,33 @@
+type = menu
+
+customization-meta {
+  identifier = org.xiaoxian.gui.GuiEasyLanMain
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  custom_menu_title = Host Settings
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=450975%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=450975%
+  action = setbuttonlabel
+  value = Load
+}
+
+customization {
+  identifier = %id=330975%
+  action = setbuttonlabel
+  value = Save
+}
+

@@ -1,0 +1,36 @@
+# Folders
+# =============================================================================
+/.vscode/
+/coremods/
+/crash-reports/
+/data/
+/fancymenu_data/
+/fancymenu_setups/
+/ldlib/
+/logs/
+/modernfix/
+/local/
+/patchouli_books/
+/resourcepacks/
+/saves/
+/server-resource-packs/
+/shaderpacks/
+/sources/
+/temp/
+/texturepacks/
+/mods/
+/screenshots/
+
+# Files
+# =============================================================================
+/kubejs/README.txt
+/usercache.json
+/whitelist.json
+/usernamecache.json
+/icon.png
+/fabricloader.log
+/imgui.ini
+/knownkeys.txt
+/patchouli_data.json
+/rhino.local.properties
+/supportercache.json

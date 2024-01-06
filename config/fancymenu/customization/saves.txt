@@ -1,0 +1,90 @@
+type = menu
+
+customization-meta {
+  identifier = org.xiaoxian.gui.GuiWorldSelectionEdit$GuiWorldSelectionModified
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  custom_menu_title = Saves
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=346948%
+  orientation = bottom-centered
+  x = -153
+  action = movebutton
+  y = -52
+}
+
+customization {
+  identifier = %id=346948%
+  width = 71
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=346948%
+  action = setbuttonlabel
+  value = Play
+}
+
+customization {
+  identifier = %id=504972%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=582972%
+  orientation = bottom-centered
+  x = 4
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=582972%
+  width = 150
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=582972%
+  action = setbuttonlabel
+  value = Back
+}
+
+customization {
+  identifier = %id=55%
+  orientation = bottom-centered
+  x = -76
+  action = movebutton
+  y = -52
+}
+
+customization {
+  identifier = %id=55%
+  width = 72
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=55%
+  action = setbuttonlabel
+  value = Host Settings
+}
+
+customization {
+  identifier = %id=504948%
+  action = setbuttonlabel
+  value = New Save
+}
+

@@ -1,0 +1,32 @@
+type = customizablemenus
+
+net.coderbot.iris.gui.screen.ShaderPackScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
+}
+
+net.minecraft.client.gui.screens.TitleScreen {
+}
+
+me.jellysquid.mods.sodium.client.gui.SodiumOptionsGUI {
+}
+
+net.minecraft.client.gui.screens.OptionsScreen {
+}
+
+me.lizardofoz.inventorio.client.ui.InventorioScreen {
+}
+
+org.xiaoxian.gui.GuiWorldSelectionEdit$GuiWorldSelectionModified {
+}
+
+org.xiaoxian.gui.GuiEasyLanMain {
+}
+
+net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
+}
+

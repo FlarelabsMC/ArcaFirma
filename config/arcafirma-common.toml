@@ -1,0 +1,5 @@
+
+[debug]
+	#Enable debug logging? May become spammy.
+	enableLogging = false
+

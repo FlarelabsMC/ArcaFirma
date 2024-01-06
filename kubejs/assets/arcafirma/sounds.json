@@ -1,0 +1,29 @@
+{
+    "wand_bind": {
+        "Subtitle": "A spell is cast",
+        "sounds": [
+            {
+                "name": "arcafirma:wand_bind",
+                "category": "player"
+            }
+        ]
+    },
+    "arrow_wind": {
+        "Subtitle": "An arrow pierces the wind",
+        "sounds": [
+            {
+                "name": "arcafirma:arrow_wind",
+                "category": "ambient"
+            }
+        ]
+    },
+    "river": {
+        "Subtitle": "A river flows",
+        "sounds": [
+            {
+                "name": "arcafirma:river",
+                "category": "ambient"
+            }
+        ]
+    }
+}
