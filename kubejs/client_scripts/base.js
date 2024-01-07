@@ -2,8 +2,6 @@
 
 if (debugEnabled) global.LOGGER.info('Client loading...')
 
-const $SSClientConfig = Java.loadClass('com.teamderpy.shouldersurfing.config.Config').CLIENT
-
 const $FXHelper = Java.loadClass('com.lowdragmc.photon.client.fx.FXHelper')
 const $EntityEffect = Java.loadClass('com.lowdragmc.photon.client.fx.EntityEffect')
 

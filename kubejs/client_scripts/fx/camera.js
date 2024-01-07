@@ -1,5 +1,7 @@
 // priority: 0
 
+const $SSClientConfig = Java.loadClass('com.teamderpy.shouldersurfing.config.Config').CLIENT
+
 const zoomItems = [
     'minecraft:bow',
     'tfc:stone/javelin/igneous_extrusive',
