@@ -1,4 +1,4 @@
-ClientEvents.lang(event => {
+ClientEvents.lang('en_us', event => {
     global['ArcaFirma']['registry']['items']['foci'].forEach(name => {
         let a = name.charAt(0).toUpperCase() + name.slice(1)
         event.add(`item.arcafirma.magic.focus.${name}`, `${a} Focus`)

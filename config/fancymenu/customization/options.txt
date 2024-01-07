@@ -14,11 +14,6 @@ customization {
 }
 
 customization {
-  identifier = %id=345304%
-  action = hidebutton
-}
-
-customization {
   identifier = %id=505154%
   action = hidebutton
 }
@@ -36,5 +31,15 @@ customization {
   width = 310
   action = resizebutton
   height = 20
+}
+
+customization {
+  identifier = %id=345304%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=345184%
+  action = hidebutton
 }
 

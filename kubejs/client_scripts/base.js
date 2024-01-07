@@ -9,6 +9,8 @@ const $EntityEffect = Java.loadClass('com.lowdragmc.photon.client.fx.EntityEffec
 
 const $KeyMapping = Java.loadClass('net.minecraft.client.KeyMapping')
 
+const $SodiumExtraClientMod = Java.loadClass('me.flashyreese.mods.sodiumextra.client.SodiumExtraClientMod')
+
 const debugEnabled = global['ArcaFirma']['Config']['debug']['enableLogging']
 
 function clamp(value, min, max) {
@@ -51,4 +53,5 @@ ClientEvents.tick(event => {
     */
     Client.options.autoJump().set(false)
     Client.options.bobView().set(false)
+    $SodiumExtraClientMod.options().extraSettings.showCoords = false
 })

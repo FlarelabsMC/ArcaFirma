@@ -28,8 +28,8 @@ fovEffectScale:0.0
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
-damageTiltStrength:0.5
-highContrast:true
+damageTiltStrength:0.0
+highContrast:false
 gamma:0.0
 renderDistance:12
 simulationDistance:5
@@ -58,10 +58,10 @@ pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
 chatHeightFocused:1.0
-chatDelay:0.1
+chatDelay:1.0
 chatHeightUnfocused:1.0
 chatScale:1.0
-chatWidth:0.6455399061032865
+chatWidth:0.39436619718309857
 notificationDisplayTime:1.0
 mipmapLevels:4
 useNativeTransport:true
@@ -127,9 +127,13 @@ key_inventorio.keys.empty_utility:key.keyboard.4
 key_inventorio.keys.rocket_boost:key.keyboard.unknown
 key_inventorio.keys.open_player_settings:key.keyboard.unknown
 key_inventorio.keys.open_global_settings:key.keyboard.unknown
+key_key.ktnilcks.lock.toggle.hold:key.keyboard.v
+key_key.ktnilcks.lock.bypass.hold:key.keyboard.unknown
+key_key.ktnilcks.options.show:key.keyboard.unknown
 key_key.modernfix.config:key.keyboard.unknown
+key_fpsreducer.key.openGui:key.keyboard.end
+key_fpsreducer.key.forceIdle:key.keyboard.pause
 key_supplementaries.keybind.quiver:key.keyboard.unknown
-key_key.corpse.death_history:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
 key_key.crawlondemand.toggle_crawl:key.keyboard.c
 key_key.crawlondemand.crawl:key.keyboard.unknown
@@ -167,14 +171,13 @@ key_Camera down:key.keyboard.unknown
 key_Swap shoulder:key.keyboard.unknown
 key_Toggle perspective:key.keyboard.unknown
 key_key.astikorcarts.desc:key.keyboard.h
-key_shimmer.key.pickColor:key.keyboard.unknown
-key_Reload Menu | CTRL + ALT + :key.keyboard.unknown
-key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.keypad.0
+key_Reload Menu | CTRL + ALT + :key.keyboard.z
+key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.x
 key_footwork.trance:key.keyboard.unknown
 key_cloak.shout:key.keyboard.y
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.arcafirma.inspect:key.keyboard.i
-soundCategory_master:0.750551876379691
+soundCategory_master:0.4050772626931567
 soundCategory_music:0.25
 soundCategory_record:1.0
 soundCategory_weather:1.0

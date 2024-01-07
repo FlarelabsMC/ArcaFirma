@@ -52,7 +52,6 @@ EntityEvents.hurt(event => {
         entity.setRemainingFireTicks(0)
         event.cancel()
     }
-    console.log(event.source.type().msgId())
     if ((event.source.type().msgId() == 'inFire' || event.source.type().msgId() == 'onFire') && entity.type == 'minecraft:zombie') {
         entity.attack(10)
     }
@@ -68,4 +67,18 @@ PlayerEvents.tick(event => {
         }
     }
     setAttribute(player, 'forge:step_height_addition', 0.5)
+})
+
+PlayerEvents.loggedIn(event => {
+    const { player } = event
+    for (let i = 1; i < 11; i++) {
+        Utils.server.scheduleInTicks(i, () => {
+            player.inventory.getAllItems().forEach(item => {
+                item.setCount(0)
+            })
+            if (i == 10) {
+                player.give(Item.of('arcafirma:gift_of_the_gods'))
+            }
+        })
+    }
 })

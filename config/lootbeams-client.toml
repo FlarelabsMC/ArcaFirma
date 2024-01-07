@@ -118,13 +118,13 @@
 		#If vanilla tooltips should be rendered on items in world.
 		advanced_tooltips = false
 		#If tooltips should be rendered in world.
-		worldspace_tooltips = true
+		worldspace_tooltips = false
 		#Render nametags as bordered. Set to false for flat nametag with background.
-		borders = false
+		borders = true
 		#If Item nametags should be rendered.
 		render_nametags = true
 		#If Item nametags should be rendered when looking at items.
-		render_nametags_onlook = false
+		render_nametags_onlook = true
 		#If the count of item's should also be shown in the nametag.
 		render_stackcount = false
 		#How close the player has to look at the item to render the nametag.
@@ -138,7 +138,7 @@
 		nametag_background_alpha = 0.5
 		#Scale of the nametag.
 		#Range: -10.0 ~ 10.0
-		nametag_scale = -10.0
+		nametag_scale = 0.75
 		#The Y-offset of the nametag.
 		#Range: -30.0 ~ 30.0
 		nametag_y_offset = 0.75

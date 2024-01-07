@@ -112,7 +112,7 @@
 	displayItemHeatBars = true
 	#
 	# If true, particles specifically for wind will appear.
-	enableWindParticles = false
+	enableWindParticles = true
 
 [compatibility]
 	#
