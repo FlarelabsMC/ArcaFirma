@@ -177,6 +177,7 @@ key_footwork.trance:key.keyboard.unknown
 key_cloak.shout:key.keyboard.y
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.arcafirma.inspect:key.keyboard.i
+key_key.arcafirma.zoom:key.keyboard.q
 soundCategory_master:0.4050772626931567
 soundCategory_music:0.25
 soundCategory_record:1.0

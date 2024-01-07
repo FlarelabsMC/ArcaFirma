@@ -28,9 +28,10 @@ ClientEvents.tick(event => {
     const { player } = event, { options, currentScreen } = Client
 
     // I'll probably let some of these be a config option some time soon
-    const cameraOffsetZoomZ = 2.0, cameraOffsetZoomY = 0.75
+    const cameraOffsetCloseZ = 2.0, cameraOffsetCloseY = 0.75
     const cameraOffsetBaseZ = 5.0, cameraOffsetBaseY = 1.0, cameraOffsetBaseX = 0.0
     const cameraSmoothMin = 0.2, cameraSmoothMax = 2.0
+    const cameraOffsetZoomZ = 2.0, cameraOffsetZoomY = 0, cameraOffsetZoomX = -0.8
 
     /*
         Functions
@@ -73,7 +74,7 @@ ClientEvents.tick(event => {
     switch (Client.player.isUsingItem()) {
         case true:
             if (zoomItemsInHand) {
-                setOffsetAndSmooth(cameraOffsetBaseX, cameraOffsetZoomY, cameraOffsetZoomZ)
+                setOffsetAndSmooth(cameraOffsetBaseX, cameraOffsetCloseY, cameraOffsetCloseZ)
                 cameraType(0)
             } else if (firstPersonItemsInHand) {
                 cameraType(1)
@@ -83,8 +84,13 @@ ClientEvents.tick(event => {
             }
             break
         case false:
-            setOffsetAndSmooth(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
-            cameraType(0)
+            if (!global['keys']['ZOOM'].isDown()) {
+                setOffsetAndSmooth(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
+                cameraType(0)
+            } else {
+                setOffset(cameraOffsetZoomX, cameraOffsetZoomY, cameraOffsetZoomZ)
+                cameraType(0)
+            }
             break
     }
 })

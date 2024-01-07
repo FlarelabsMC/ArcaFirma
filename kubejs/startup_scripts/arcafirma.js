@@ -36,11 +36,13 @@ StartupEvents.registry('creative_mode_tab', event => {
 ClientEvents.init(event => {
     let $KeyMappingRegistry = Java.loadClass('dev.architectury.registry.client.keymappings.KeyMappingRegistry')
     let $KeyMapping = Java.loadClass('net.minecraft.client.KeyMapping')
+    let $ToggleKeyMapping = Java.loadClass('net.minecraft.client.ToggleKeyMapping')
     let $GLFWKey = Java.loadClass('org.lwjgl.glfw.GLFW')
 
     global['keys'] = {}
 
     global['keys']['INSPECT'] = new $KeyMapping('key.arcafirma.inspect', $GLFWKey.GLFW_KEY_I, 'key.categories.gameplay')
+    global['keys']['ZOOM'] = new $ToggleKeyMapping('key.arcafirma.zoom', $GLFWKey.GLFW_KEY_Q, 'key.categories.gameplay', () => true)
 
     Object.keys(global['keys']).forEach(key => {
         $KeyMappingRegistry.register(global.keys[key])
