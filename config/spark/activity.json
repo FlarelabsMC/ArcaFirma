@@ -5,6 +5,71 @@
       "name": "Squishiie",
       "uniqueId": "93b47b5d-37ef-47be-944b-754f1a594a18"
     },
+    "time": 1705114048984,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/lpzL2BA0BO"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Squishiie",
+      "uniqueId": "93b47b5d-37ef-47be-944b-754f1a594a18"
+    },
+    "time": 1705105766611,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/1ozuU9SKoK"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Squishiie",
+      "uniqueId": "93b47b5d-37ef-47be-944b-754f1a594a18"
+    },
+    "time": 1705104487706,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/oLdS6yJ4XM"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Squishiie",
+      "uniqueId": "93b47b5d-37ef-47be-944b-754f1a594a18"
+    },
+    "time": 1705101670614,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/bPW5Ep6LrI"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Squishiie",
+      "uniqueId": "93b47b5d-37ef-47be-944b-754f1a594a18"
+    },
+    "time": 1704672159267,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/5mY2sL7My5"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Squishiie",
+      "uniqueId": "93b47b5d-37ef-47be-944b-754f1a594a18"
+    },
     "time": 1703395850566,
     "type": "Profiler (live)",
     "data": {

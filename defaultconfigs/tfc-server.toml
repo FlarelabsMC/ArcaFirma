@@ -61,7 +61,7 @@
 	[blocks.snow]
 		#
 		# [Requires MC Restart] If snow will slow players that move on top of it similar to soul sand or honey.
-		enableSnowSlowEntities = true
+		enableSnowSlowEntities = false
 		#
 		# The chance that snow will accumulate during a storm. Lower values = faster snow accumulation, but also more block updates (aka lag).
 		#Range: > 1
@@ -87,7 +87,7 @@
 		#
 		# A movement multiplier for players moving through plants. Individual plants will use a ratio of this value, and lower = slower.
 		#Range: 0.0 ~ 1.0
-		plantsMovementModifier = 0.2
+		plantsMovementModifier = 1.0
 
 	[blocks.leaves]
 		#

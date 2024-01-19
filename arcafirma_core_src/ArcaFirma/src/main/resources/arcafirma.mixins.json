@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.squoshi.packdev.arcafirma.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "arcafirma.refmap.json",
+  "mixins": [],
+  "client": [
+    "CameraInvoker",
+    "CreateWorldScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

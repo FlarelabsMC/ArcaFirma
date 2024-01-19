@@ -29,4 +29,16 @@ ClientEvents.lang('en_us', event => {
     event.add('arcafirma.inspect.default_3', 'It\'s... something.')
 
     event.add('arcafirma.remove_focus', 'If I remove the focus from the wand, it may be destroyed...')
+
+    event.add('options.difficulty.easy', 'Classic')
+    event.add('options.difficulty.normal', 'Expert')
+    event.add('options.difficulty.hard', 'Master')
+    event.add('options.difficulty', 'Mode')
+
+    event.add('selectWorld.enterName', 'Enter name')
+
+    event.add('createWorld.preparing', ' ')
+
+    event.add('selectWorld.allowCommands', 'Enable DevEnv')
+    event.add('lanServer.otherPlayers', 'Settings')
 })

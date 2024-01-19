@@ -71,14 +71,17 @@ PlayerEvents.tick(event => {
 
 PlayerEvents.loggedIn(event => {
     const { player } = event
-    for (let i = 1; i < 11; i++) {
-        Utils.server.scheduleInTicks(i, () => {
-            player.inventory.getAllItems().forEach(item => {
-                item.setCount(0)
+    if (!player.persistentData.firstjoin) {
+        for (let i = 1; i < 61; i++) {
+            Utils.server.scheduleInTicks(i, () => {
+                player.inventory.getAllItems().forEach(item => {
+                    item.setCount(0)
+                })
+                if (i == 10) {
+                    player.give(Item.of('arcafirma:gift_of_the_gods'))
+                }
             })
-            if (i == 10) {
-                player.give(Item.of('arcafirma:gift_of_the_gods'))
-            }
-        })
+        }
+        player.persistentData.firstjoin = true
     }
 })

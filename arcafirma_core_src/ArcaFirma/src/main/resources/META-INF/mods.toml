@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Mozilla Public License 2.0"
+issueTrackerURL="https://github.com/FlarelabsMC/ArcaFirma/issues"
+[[mods]]
+modId="arcafirma" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="ArcaFirma" #mandatory
+displayURL="https://github.com/FlarelabsMC/ArcaFirma"
+credits=""
+authors="squoshi" #optional
+description='''
+Core mod for the ArcaFirma modpack.
+'''
+[[dependencies.arcafirma]]
+   modId="forge"
+   mandatory=true
+   versionRange="[47,)"
+   ordering="NONE"
+   side="BOTH"
+[[dependencies.arcafirma]]
+   modId="minecraft"
+   mandatory=true
+   versionRange="[1.20.1,1.21)"
+   ordering="NONE"
+   side="BOTH"

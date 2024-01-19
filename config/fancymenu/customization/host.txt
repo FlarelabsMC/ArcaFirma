@@ -1,0 +1,41 @@
+type = menu
+
+customization-meta {
+  identifier = org.xiaoxian.gui.GuiShareToLanEdit$GuiShareToLanModified
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  custom_menu_title = Host Server
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=505972%
+  action = hidebutton
+}
+
+customization {
+  orientation = bottom-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = closegui%btnaction_splitter_fm%
+  x = 5
+  width = 150
+  action = addbutton
+  actionid = ad4ce098-4dbc-4555-858a-b9ea3e289f6d1704842210055
+  y = -28
+  label = Cancel
+  height = 20
+}
+
+customization {
+  identifier = %id=345972%
+  action = setbuttonlabel
+  value = Host
+}
+

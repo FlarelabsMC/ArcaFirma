@@ -1,5 +1,8 @@
 // priority: 0
 
+const $FXHelper = Java.loadClass('com.lowdragmc.photon.client.fx.FXHelper')
+const $EntityEffect = Java.loadClass('com.lowdragmc.photon.client.fx.EntityEffect')
+
 ClientEvents.tick(event => {
     Client.level.getEntities().forEach(entity => {
         if (entity.type != 'minecraft:arrow') return

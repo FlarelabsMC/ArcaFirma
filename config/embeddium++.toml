@@ -3,7 +3,7 @@
 
 	[EmbeddiumPlus.DynamicLights]
 		OnlyUpdateOnPositionChange = true
-		DynamicEntityLighting = true
+		DynamicEntityLighting = false
 		#Allowed Values: OFF, SLOW, FAST, FASTEST, REALTIME
 		QualityMode = "REALTIME"
 		DynamicTileEntityLighting = true
@@ -56,7 +56,7 @@
 		#Allowed Values: PITCH_BLACK, REALLY_DARK, DARK, DIM
 		DarknessMode = "REALLY_DARK"
 		#Turn on this feature
-		Enable = false
+		Enable = true
 
 		[EmbeddiumPlus.true_darkness.Advanced]
 			IgnoreMoonPhase = false

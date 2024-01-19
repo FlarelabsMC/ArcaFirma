@@ -19,11 +19,6 @@
 
 	[general.types]
 
-		[general.types.cake]
-
-			[general.types.cake.tfc]
-				cake = true
-
 		[general.types.wood_type]
 
 			[general.types.wood_type.tfc]
@@ -60,10 +55,4 @@
 				shutter = true
 				bench = true
 				chair = true
-
-			[general.entries.wood_type.backpacked]
-				backpack_shelf = true
-
-			[general.entries.wood_type.farmersdelight]
-				cabinet = true
 

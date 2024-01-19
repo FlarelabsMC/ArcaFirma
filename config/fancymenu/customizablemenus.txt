@@ -33,3 +33,9 @@ net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 net.minecraft.client.gui.screens.ChatOptionsScreen {
 }
 
+org.xiaoxian.gui.GuiExitGame$GuiInGameMenuModified {
+}
+
+org.xiaoxian.gui.GuiShareToLanEdit$GuiShareToLanModified {
+}
+

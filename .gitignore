@@ -21,6 +21,9 @@
 /mods/
 /screenshots/
 /config/ItemLocks/nodes
+/kubejs/assets/*.zip
+/XaeroWorldMap/
+/XaeroWaypoints/
 
 # Files
 # =============================================================================
@@ -35,3 +38,8 @@
 /patchouli_data.json
 /rhino.local.properties
 /supportercache.json
+/*.log
+hs_err_pid*
+/original.properties
+/preprocessed.properties
+replay_pid*

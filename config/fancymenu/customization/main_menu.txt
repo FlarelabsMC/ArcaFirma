@@ -50,53 +50,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  orientation = mid-centered
-  x = -75
-  action = movebutton
-  y = 40
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  width = 150
-  action = resizebutton
-  height = 16
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  action = setbuttonlabel
-  value = Quit
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  orientation = mid-centered
-  x = -75
-  action = movebutton
-  y = -11
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  width = 150
-  action = resizebutton
-  height = 16
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  action = setbuttonlabel
-  value = Saves
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
-  action = hidebutton
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
   orientation = bottom-left
   x = 3
@@ -106,10 +59,10 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  orientation = mid-centered
-  x = -75
+  orientation = mid-left
+  x = 10
   action = movebutton
-  y = 23
+  y = 14
 }
 
 customization {
@@ -126,6 +79,27 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = mid-left
+  x = 10
+  action = movebutton
+  y = 31
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 150
+  action = resizebutton
+  height = 16
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = setbuttonlabel
+  value = Quit
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = bottom-left
   x = 24
@@ -134,11 +108,32 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-left
+  x = 10
+  action = movebutton
+  y = -20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 150
+  action = resizebutton
+  height = 16
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = setbuttonlabel
+  value = Saves
+}
+
+customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-centered
-  x = -112
+  x = -159
   action = movebutton
-  y = 23
+  y = 14
 }
 
 customization {
@@ -158,6 +153,11 @@ customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   action = vanilla_button_visibility_requirements
   [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:d7f4b32c-d4e3-4608-b43c-5e7141b28a5f1701989899231] = ["mode":"contains","text":"{"placeholder":"json","values":{"source":"devmode.json","json_path":"$.enabled"}}","compare_with":"true"]$
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
 }
 
 customization {
@@ -206,7 +206,7 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 183
   width = 274
   action = deep_customization_element:title_screen_logo
@@ -284,15 +284,15 @@ customization {
 }
 
 customization {
-  orientation = mid-centered
-  loopbackgroundanimations = true
+  orientation = mid-left
+  loopbackgroundanimations = false
   restartbackgroundanimations = true
   buttonaction = opengui;net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen%btnaction_splitter_fm%
-  x = -75
+  x = 10
   width = 150
   action = addbutton
   actionid = 79f68ebe-1ee3-4f37-9843-dac60adf25da1703789709104
-  y = 6
+  y = -3
   label = Online
   height = 16
 }

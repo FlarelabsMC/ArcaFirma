@@ -14,8 +14,42 @@ customization {
 }
 
 customization {
-  identifier = %id=345972%
-  action = setbuttonlabel
-  value = Create
+  identifier = %id=345190%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=611261%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=346243%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=346204%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=611237%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=505162%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=346267%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=345162%
+  action = hidebutton
 }
 
