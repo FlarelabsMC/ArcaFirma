@@ -39,3 +39,6 @@ org.xiaoxian.gui.GuiExitGame$GuiInGameMenuModified {
 org.xiaoxian.gui.GuiShareToLanEdit$GuiShareToLanModified {
 }
 
+net.minecraft.client.gui.screens.GenericDirtMessageScreen {
+}
+

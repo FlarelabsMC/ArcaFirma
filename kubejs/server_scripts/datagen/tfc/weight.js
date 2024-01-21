@@ -13,10 +13,7 @@ ServerEvents.highPriorityData(event => {
     let WVL = "very_light"
 
     const ITEMS = {
-        "supplementaries:bomb": {
-            size: SL,
-            weight: WH
-        },
+        
     }
     Object.keys(ITEMS).forEach(ing => {
         let name = ing.split(":")[1]

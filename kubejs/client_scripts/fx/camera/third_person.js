@@ -39,19 +39,10 @@ ClientEvents.tick(event => {
         Functions
     */
     // offset the camera based on the player's motion
-    function cameraSmooth() {
-        let motionY = player.getDeltaMovement().y()
-        let yOffset = 1.0 + (-motionY * 0.5)
-        $SSClientConfig.setOffsetY(clamp(yOffset, cameraSmoothMin, cameraSmoothMax))
-    }
     function setOffset(offsetX, offsetY, offsetZ) {
-        $SSClientConfig.setOffsetX(offsetX)
-        $SSClientConfig.setOffsetY(offsetY)
-        $SSClientConfig.setOffsetZ(offsetZ)
-    }
-    function setOffsetAndSmooth(offsetX, offsetY, offsetZ) {
-        setOffset(offsetX, offsetY, offsetZ)
-        cameraSmooth()
+        if ($SSClientConfig.getOffsetX() != offsetX) $SSClientConfig.setOffsetX(offsetX)
+        if ($SSClientConfig.getOffsetY() != offsetY) $SSClientConfig.setOffsetY(offsetY)
+        if ($SSClientConfig.getOffsetZ() != offsetZ) $SSClientConfig.setOffsetZ(offsetZ)
     }
     function cameraType(type) {
         switch (type) {
@@ -76,18 +67,18 @@ ClientEvents.tick(event => {
     switch (Client.player.isUsingItem()) {
         case true:
             if (zoomItemsInHand) {
-                setOffsetAndSmooth(cameraOffsetBaseX, cameraOffsetCloseY, cameraOffsetCloseZ)
+                setOffset(cameraOffsetBaseX, cameraOffsetCloseY, cameraOffsetCloseZ)
                 cameraType(0)
             } else if (firstPersonItemsInHand) {
                 cameraType(1)
             } else {
-                setOffsetAndSmooth(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
+                setOffset(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
                 cameraType(0)
             }
             break
         case false:
             if (!global['keys']['ZOOM'].isDown()) {
-                setOffsetAndSmooth(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
+                setOffset(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
                 cameraType(0)
             } else {
                 setOffset(cameraOffsetZoomX, cameraOffsetZoomY, cameraOffsetZoomZ)

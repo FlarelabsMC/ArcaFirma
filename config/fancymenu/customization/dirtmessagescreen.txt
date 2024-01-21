@@ -1,0 +1,26 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.GenericDirtMessageScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  path = kubejs/assets/arcafirma/loading_gif.gif
+  orientation = bottom-right
+  x = -54
+  width = 50
+  action = addtexture
+  actionid = d931ad6b-8ce6-4112-b3a7-11cdf71b8c081705699648433
+  y = -54
+  height = 50
+}
+

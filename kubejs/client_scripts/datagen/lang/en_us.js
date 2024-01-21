@@ -35,7 +35,12 @@ ClientEvents.lang('en_us', event => {
     event.add('options.difficulty.hard', 'Master')
     event.add('options.difficulty', 'Mode')
 
+    event.add('createWorld.tab.game.title', 'General')
+    event.add('createWorld.tab.more.title', 'Misc')
+    
+    event.add('selectWorld.create', 'Create')
     event.add('selectWorld.enterName', 'Enter name')
+    event.add('selectWorld.gameMode', 'Type')
 
     event.add('createWorld.preparing', ' ')
 

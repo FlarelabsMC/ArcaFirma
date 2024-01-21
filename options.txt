@@ -15,7 +15,7 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:true
 touchscreen:false
-fullscreen:true
+fullscreen:false
 bobView:false
 toggleCrouch:false
 toggleSprint:false
@@ -46,7 +46,7 @@ resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonligh
 incompatibleResourcePacks:["firmalife_data"]
 lastServer:
 lang:en_us
-soundDevice:"OpenAL Soft on Speakers (Realtek(R) Audio)"
+soundDevice:"OpenAL Soft on VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)"
 chatVisibility:0
 chatOpacity:0.7323943661971831
 chatLineSpacing:0.0
@@ -140,9 +140,9 @@ key_gui.xaero_toggle_tracked_players:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_key.modernfix.config:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
-key_iris.keybind.reload:key.keyboard.keypad.add
-key_iris.keybind.toggleShaders:key.keyboard.keypad.enter
-key_iris.keybind.shaderPackSelection:key.keyboard.unknown
+key_iris.keybind.reload:key.keyboard.keypad.enter
+key_iris.keybind.toggleShaders:key.keyboard.k
+key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.crawlondemand.toggle_crawl:key.keyboard.c
 key_key.crawlondemand.crawl:key.keyboard.unknown
 key_key.hudcompass.add_waypoint:key.keyboard.unknown
@@ -178,14 +178,14 @@ key_Camera down:key.keyboard.unknown
 key_Swap shoulder:key.keyboard.unknown
 key_Toggle perspective:key.keyboard.unknown
 key_key.astikorcarts.desc:key.keyboard.h
-key_Reload Menu | CTRL + ALT + :key.keyboard.z
+key_Reload Menu | CTRL + ALT + :key.keyboard.keypad.add
 key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.x
 key_footwork.trance:key.keyboard.unknown
 key_cloak.shout:key.keyboard.y
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.arcafirma.inspect:key.keyboard.i
 key_key.arcafirma.zoom:key.keyboard.q
-soundCategory_master:0.0
+soundCategory_master:0.5772626931567328
 soundCategory_music:0.25
 soundCategory_record:1.0
 soundCategory_weather:1.0
