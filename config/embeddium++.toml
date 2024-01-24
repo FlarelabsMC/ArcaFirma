@@ -30,7 +30,7 @@
 		#Allowed Values: OFF, FAST, FANCY
 		ChunkFadeInQuality = "FANCY"
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
-		BorderlessFullscreen = "WINDOWED"
+		BorderlessFullscreen = "BORDERLESS"
 		ExtendedServerViewDistance = true
 
 	#Configure max Entity distance
@@ -56,7 +56,7 @@
 		#Allowed Values: PITCH_BLACK, REALLY_DARK, DARK, DIM
 		DarknessMode = "REALLY_DARK"
 		#Turn on this feature
-		Enable = true
+		Enable = false
 
 		[EmbeddiumPlus.true_darkness.Advanced]
 			IgnoreMoonPhase = false

@@ -24,12 +24,14 @@
 /kubejs/assets/*.zip
 /XaeroWorldMap/
 /XaeroWaypoints/
+/essential/
 
 # Files
 # =============================================================================
 /kubejs/README.txt
 /usercache.json
 /whitelist.json
+/ops.json
 /usernamecache.json
 /icon.png
 /fabricloader.log

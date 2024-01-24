@@ -130,8 +130,8 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
-  orientation = mid-centered
-  x = -159
+  orientation = mid-left
+  x = 161
   action = movebutton
   y = 14
 }
