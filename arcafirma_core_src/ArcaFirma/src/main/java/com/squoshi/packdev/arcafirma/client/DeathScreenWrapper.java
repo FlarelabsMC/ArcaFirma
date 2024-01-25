@@ -9,9 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Date;
 import java.util.Optional;
-import java.util.concurrent.TimeUnit;
 import java.util.function.BooleanSupplier;
 
 public class DeathScreenWrapper extends DeathScreen {
@@ -29,6 +27,8 @@ public class DeathScreenWrapper extends DeathScreen {
     @Override
     public void init() {
         deathScreen.init(minecraft, width, height);
+        this.timer = 320;
+        this.minecraft.options.hideGui = true;
     }
 
     public void setAlpha(float alpha) {
@@ -39,13 +39,12 @@ public class DeathScreenWrapper extends DeathScreen {
     @Override
     public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
         int alphaColor = Mth.ceil(this.alpha * 255.0F) << 24;
-        this.deathScreen.exitButtons.clear();
         graphics.fillGradient(0, 0, this.width, this.height, 0x60500000, 0xa0803030);
         graphics.pose().pushPose();
         graphics.pose().scale(2.0F, 2.0F, 2.0F);
         graphics.drawCenteredString(this.font, title, this.width / 2 / 2, 30, 0xffffff | alphaColor);
-        String timerString = String.valueOf(TimeUnit.SECONDS.toSeconds(timer));
-        graphics.drawCenteredString(this.font, timerString, this.width / 2 / 2, 50, 0xffffff | alphaColor);
+        String timerString = String.valueOf(timer / 20);
+        graphics.drawCenteredString(this.font, timerString, this.width / 2 / 2, 80, 0xffffff | alphaColor);
         graphics.pose().popPose();
         if (deathScreen.causeOfDeath != null) {
             graphics.drawCenteredString(this.font, deathScreen.causeOfDeath, this.width / 2, 85, 0xffffff | alphaColor);
@@ -71,8 +70,15 @@ public class DeathScreenWrapper extends DeathScreen {
 
     @Override
     public void tick() {
-        if (showingMenu.getAsBoolean())
+        if (showingMenu.getAsBoolean()) {
             deathScreen.tick();
+            if (this.timer > 0) {
+                this.timer--;
+            } else {
+                this.minecraft.player.respawn();
+                this.minecraft.options.hideGui = false;
+            }
+        }
     }
 
     @Override

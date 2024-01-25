@@ -41,8 +41,6 @@ public class AFDeathScreen extends DeathScreenWrapper {
             showMenu = true;
         }
 
-//        float zoomIn = Mth.clamp((now - fadeInStart) / 1200.0F, 0.0F, 1.0F);
-        //above with easing
         float zoomIn = Mth.clamp((float) easeOut(now - fadeInStart) / 1200.0F, 0.0F, 1.0F);
 
         float fadeIn = 0;
@@ -78,15 +76,7 @@ public class AFDeathScreen extends DeathScreenWrapper {
             int l = Mth.ceil(fadeIn * 255.0F) << 24;
             if ((l & 0xfc000000) != 0) {
                 deathScreen.render(graphics, pMouseX, pMouseY, partialTick);
-                if (fadeIn - now > 15000) {
-                    respawn();
-                }
             }
         }
-    }
-
-    public void respawn() {
-        this.minecraft.setScreen(null);
-        this.minecraft.player.respawn();
     }
 }

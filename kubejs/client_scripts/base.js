@@ -43,7 +43,11 @@ ClientEvents.tick(event => {
         Misc
     */
     if ($KeyMapping.getAllKeyMappings()['key.sprint'].isDown()) {
-        if (Math.abs(event.player.getDeltaMovement().x() + event.player.getDeltaMovement().z()) > 0.001)
+        if (
+            Math.abs(event.player.getDeltaMovement().x() + event.player.getDeltaMovement().z()) > 0.001
+            && !event.player.isVisuallyCrawling()
+            && !event.player.isCrouching()
+        )
             event.player.setSprinting(true)
     } else {
         event.player.setSprinting(false)

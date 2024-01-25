@@ -84,6 +84,9 @@ ClientEvents.tick(event => {
                 setOffset(cameraOffsetZoomX, cameraOffsetZoomY, cameraOffsetZoomZ)
                 cameraType(0)
             }
+            if (event.player.isVisuallyCrawling()) {
+                setOffset(cameraOffsetZoomX, cameraOffsetZoomY, cameraOffsetZoomZ)
+            }
             break
     }
 })

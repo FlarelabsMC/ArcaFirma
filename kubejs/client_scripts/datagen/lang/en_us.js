@@ -44,6 +44,8 @@ ClientEvents.lang('en_us', event => {
 
     event.add('createWorld.preparing', ' ')
 
+    event.add('arcafirma.death.title', 'You died...')
+
     event.add('selectWorld.allowCommands', 'Enable DevEnv')
     event.add('lanServer.otherPlayers', 'Settings')
 })
