@@ -23,7 +23,17 @@ public class FileUtils {
 
     public static void downloadFileSafe(@NotNull String url, String path) throws IOException {
         List<String> WHITELISTED_FILE_TYPES = List.of(".jar", ".json");
-        List<String> WHITELISTED_URLS = List.of("https://www.curseforge.com", "https://modrinth.com", "https://cdn.modrinth.com");
+        List<String> WHITELISTED_URLS = List.of(
+                //CurseForge
+                "https://www.curseforge.com",
+                "https://edge.forgecdn.net",
+                //Modrinth
+                "https://modrinth.com",
+                "https://cdn.modrinth.com",
+                //CurseRinth
+                "https://tizudev.vercel.app",
+                "https://curserinth-tizu.vercel.app"
+        );
         URL url1 = new URL(url);
         path = startPathFromModpackInstance(path);
         if (!Path.of(path).normalize().toAbsolutePath().startsWith(FMLPaths.GAMEDIR.get().toString().replace("\\", "/"))) {
@@ -56,6 +66,18 @@ public class FileUtils {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        } else {
+            ArcaFirma.LOGGER.info("File already exists: " + path + " - Skipping download, could be unsafe!");
         }
+    }
+
+    public static void asyncDownloadFileSafe(@NotNull String url, String path) {
+        new Thread(() -> {
+            try {
+                downloadFileSafe(url, path);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 }
