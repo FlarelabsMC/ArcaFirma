@@ -1,0 +1,106 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = drippy_loading_overlay
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1706841884645
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:27c35f85-eafa-4945-9a70-7c9868005524-1706841707657] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+}
+
+element {
+  is_async = false
+  tick_delay = 0
+  tick_mode = on_menu_load
+  ticker_element_executable_block_identifier = a12aa913-79db-45ac-a29d-d85e005f31c2-1706841707657
+  [executable_action_instance:3af36a41-5f33-4e0e-b7f7-83c650acf62a-1706841717158][action_type:downloadfile] = https://cdn.modrinth.com/data/5srFLIaK/versions/BCETFiXz/better-clouds-1.3.13%2B1.20.1.jar;mods/better-clouds-1.3.13+1.20.1.jar
+  [executable_block:8118f094-2c7a-4a78-be7d-8642479ac4c0-1706841868685][type:if] = [executables:3af36a41-5f33-4e0e-b7f7-83c650acf62a-1706841717158;]
+  [if_executable_block_body:8118f094-2c7a-4a78-be7d-8642479ac4c0-1706841868685] = 0a73976d-928b-4cf2-9fb8-798b788f8748-1706841854162
+  [loading_requirement_container_meta:0a73976d-928b-4cf2-9fb8-798b788f8748-1706841854162] = [groups:][instances:a1875b73-3534-40dc-ba85-b5bf2eead4ad-1706841855131;]
+  [loading_requirement:fancymenu_loading_requirement_file_exists][requirement_mode:if_not][req_id:a1875b73-3534-40dc-ba85-b5bf2eead4ad-1706841855131] = mods/better-clouds-1.3.13+1.20.1.jar
+  [executable_block:a12aa913-79db-45ac-a29d-d85e005f31c2-1706841707657][type:generic] = [executables:8118f094-2c7a-4a78-be7d-8642479ac4c0-1706841868685;]
+  element_type = fancymenu_customization_item_ticker
+  instance_identifier = 119dc874-4377-4a84-87c5-0ed582e026ff-1706749841823
+  custom_element_layer_name = Mod Download
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-left
+  x = 0
+  y = -28
+  width = 70
+  height = 28
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = e4b9934d-eae2-452e-9069-f8999737988a-1706749841823
+  [loading_requirement_container_meta:e4b9934d-eae2-452e-9069-f8999737988a-1706749841823] = [groups:][instances:]
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 6a826d03-ad83-46b1-8e19-8381dc63c006-1706749826135
+  [executable_block:6a826d03-ad83-46b1-8e19-8381dc63c006-1706749826135][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = progress_bar
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 140
+  y = 294
+  width = 360
+  height = 10
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 92fe7639-b7d8-4969-9815-d759d9839ebb-1706749826135
+  [loading_requirement_container_meta:92fe7639-b7d8-4969-9815-d759d9839ebb-1706749826135] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 4a063ba7-d2b4-461b-b4bc-2e7e44df577e-1706749826135
+  [executable_block:4a063ba7-d2b4-461b-b4bc-2e7e44df577e-1706749826135][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = mojang_logo
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 140
+  y = 135
+  width = 360
+  height = 90
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 406a7e81-4311-4038-90c8-2b872ec0b047-1706749826135
+  [loading_requirement_container_meta:406a7e81-4311-4038-90c8-2b872ec0b047-1706749826135] = [groups:][instances:]
+  is_hidden = true
+  automated_button_clicks = 0
+}
+

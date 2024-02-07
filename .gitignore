@@ -25,6 +25,8 @@
 /XaeroWorldMap/
 /XaeroWaypoints/
 /essential/
+/BACKUP/
+
 
 # Files
 # =============================================================================
@@ -45,3 +47,6 @@ hs_err_pid*
 /original.properties
 /preprocessed.properties
 replay_pid*
+crosshair_config.ccmcfg
+devmode.json
+online_status.json

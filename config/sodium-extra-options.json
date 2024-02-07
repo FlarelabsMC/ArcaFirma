@@ -21,7 +21,8 @@
       "impactfulweather:rainsplash": false,
       "impactfulweather:warpedspore": false,
       "impactfulweather:weepingtear": false,
-      "impactfulweather:weepingtearsplash": false
+      "impactfulweather:weepingtearsplash": false,
+      "minecraft:damage_indicator": false
     }
   },
   "detail_settings": {

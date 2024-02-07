@@ -42,8 +42,12 @@ LevelEvents.tick('minecraft:overworld', event => {
 })
 
 EntityEvents.spawned('minecraft:zombie', event => {
-    event.entity.setMaxHealth(60)
-    event.entity.setHealth(60)
+    let /** @type {Internal.Zombie} */ entity = event.entity
+    entity.isBaby() ? entity.setMaxHealth(1) 
+    && entity.setHealth(0.5)
+    && setAttribute(entity, 'generic.armor', 0)
+    : 
+    entity.setMaxHealth(60) && entity.setHealth(60)
 })
 
 EntityEvents.hurt(event => {
@@ -54,6 +58,9 @@ EntityEvents.hurt(event => {
     }
     if ((event.source.type().msgId() == 'inFire' || event.source.type().msgId() == 'onFire') && entity.type == 'minecraft:zombie') {
         entity.attack(10)
+    }
+    if (event.entity.isPlayer()) {
+        event.entity.sendData('s2c:hurt_event/close_menu', {})
     }
 })
 

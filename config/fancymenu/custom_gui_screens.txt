@@ -1,0 +1,17 @@
+type = custom_gui_screens
+
+overridden_screens {
+}
+
+custom_gui {
+  identifier = arcafirma.mod_checker
+  title = 
+  allow_esc = false
+}
+
+custom_gui {
+  identifier = dummy_ui
+  title = dummy_ui
+  allow_esc = true
+}
+

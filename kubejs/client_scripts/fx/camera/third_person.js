@@ -1,6 +1,7 @@
 // priority: 0
 
 const $SSClientConfig = Java.loadClass('com.teamderpy.shouldersurfing.config.Config').CLIENT
+const $SSKeyHandler = Java.loadClass('com.teamderpy.shouldersurfing.client.KeyHandler')
 
 const zoomItems = [
     'minecraft:bow',
@@ -22,6 +23,12 @@ const firstPersonItems = [
     'minecraft:spyglass',
 ]
 
+let lastPos = new Vec3f(0, 0, 0)
+let isSwappedShoulder = false
+let swapShoulderCooldown = 0
+let isZooming = false
+let needsUpdate = false
+
 ClientEvents.tick(event => {
     /**
         Constants
@@ -29,11 +36,26 @@ ClientEvents.tick(event => {
     */
     const { player } = event, { options, currentScreen } = Client
 
-    // I'll probably let some of these be a config option some time soon
+    if ($SSKeyHandler.KEYBIND_SWAP_SHOULDER.isDown() && swapShoulderCooldown == 0) {
+        isSwappedShoulder = !isSwappedShoulder
+        swapShoulderCooldown = 5
+    }
+    if (swapShoulderCooldown > 0) swapShoulderCooldown--
+
+    let pos = new Vec3f(player.x, player.y, player.z)
+
+    const movementVector = new Vector3f((pos.x() - lastPos.x()), 0, (pos.z() - lastPos.z()));
+    const lookVector = new Vector3f(JavaMath.cos(JavaMath.toRadians(player.yHeadRotO + 90)), 0, JavaMath.sin(JavaMath.toRadians(player.yHeadRotO + 90)));
+
     const cameraOffsetCloseZ = 2.0, cameraOffsetCloseY = 0.75
-    const cameraOffsetBaseZ = 5.0, cameraOffsetBaseY = 1.0, cameraOffsetBaseX = 0.0
-    const cameraSmoothMin = 0.2, cameraSmoothMax = 2.0
+    const cameraOffsetBaseZ = 7.0, cameraOffsetBaseY = 1.0, cameraOffsetBaseX = 0.0
     const cameraOffsetZoomZ = 2.0, cameraOffsetZoomY = 0, cameraOffsetZoomX = -0.8
+
+    let mutableOffset = {
+        x: 0,
+        y: 0,
+        z: 0,
+    }
 
     /*
         Functions
@@ -55,8 +77,6 @@ ClientEvents.tick(event => {
         }
     }
 
-
-
     const firstPersonItemsInHand = firstPersonItems.some(item =>
         player.getMainHandItem().getId() == item || player.getOffHandItem().getId() == item
     )
@@ -67,26 +87,48 @@ ClientEvents.tick(event => {
     switch (Client.player.isUsingItem()) {
         case true:
             if (zoomItemsInHand) {
-                setOffset(cameraOffsetBaseX, cameraOffsetCloseY, cameraOffsetCloseZ)
+                mutableOffset.x = cameraOffsetBaseX
+                mutableOffset.y = cameraOffsetCloseY
+                mutableOffset.z = cameraOffsetCloseZ
                 cameraType(0)
             } else if (firstPersonItemsInHand) {
+                mutableOffset.x = cameraOffsetBaseX
+                mutableOffset.y = cameraOffsetBaseY
+                mutableOffset.z = cameraOffsetBaseZ
                 cameraType(1)
             } else {
-                setOffset(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
+                mutableOffset.x = cameraOffsetBaseX
+                mutableOffset.y = cameraOffsetBaseY
+                mutableOffset.z = cameraOffsetBaseZ
                 cameraType(0)
             }
             break
         case false:
             if (!global['keys']['ZOOM'].isDown()) {
-                setOffset(cameraOffsetBaseX, cameraOffsetBaseY, cameraOffsetBaseZ)
+                mutableOffset.x = cameraOffsetBaseX
+                mutableOffset.y = cameraOffsetBaseY
+                mutableOffset.z = cameraOffsetBaseZ
                 cameraType(0)
+                isZooming = false
             } else {
-                setOffset(cameraOffsetZoomX, cameraOffsetZoomY, cameraOffsetZoomZ)
+                mutableOffset.x = isSwappedShoulder ? cameraOffsetZoomX : -cameraOffsetZoomX
+                mutableOffset.y = cameraOffsetZoomY
+                mutableOffset.z = cameraOffsetZoomZ
                 cameraType(0)
+                isZooming = true
             }
             if (event.player.isVisuallyCrawling()) {
-                setOffset(cameraOffsetZoomX, cameraOffsetZoomY, cameraOffsetZoomZ)
+                mutableOffset.x = cameraOffsetZoomX
+                mutableOffset.y = cameraOffsetZoomY
+                mutableOffset.z = cameraOffsetZoomZ
+                cameraType(0)
             }
             break
     }
+
+    if ($SSClientConfig.getOffsetX() != mutableOffset.x || $SSClientConfig.getOffsetY() != mutableOffset.y || $SSClientConfig.getOffsetZ() != mutableOffset.z) {
+        setOffset(mutableOffset.x, mutableOffset.y, mutableOffset.z)
+    }
+
+    lastPos = pos
 })

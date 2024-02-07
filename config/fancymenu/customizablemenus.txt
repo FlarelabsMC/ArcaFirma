@@ -42,3 +42,12 @@ net.minecraft.client.gui.screens.GenericDirtMessageScreen {
 org.xiaoxian.gui.GuiExitGame$GuiInGameMenuModified {
 }
 
+xaero.map.gui.GuiMap {
+}
+
+xaero.map.gui.GuiWorldMapSettings {
+}
+
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+

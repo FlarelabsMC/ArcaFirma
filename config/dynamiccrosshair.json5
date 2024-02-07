@@ -58,7 +58,7 @@
 			}
 		},
 		"holdingMeleeWeapon": {
-			"style": "DiagonalCross",
+			"style": "Default",
 			"color": {
 				"crosshairColor": "Unchanged",
 				"customColor": -5588020,

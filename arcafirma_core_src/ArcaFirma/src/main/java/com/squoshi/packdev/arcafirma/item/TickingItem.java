@@ -1,4 +1,4 @@
-package com.squoshi.packdev.arcafirma.jsaccess;
+package com.squoshi.packdev.arcafirma.item;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.Item;

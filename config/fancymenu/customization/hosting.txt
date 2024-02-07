@@ -1,33 +1,79 @@
-type = menu
+type = fancymenu_layout
 
-customization-meta {
+layout-meta {
   identifier = org.xiaoxian.gui.GuiEasyLanMain
-  randomgroup = 1
-  renderorder = foreground
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1706647079897
+  is_enabled = true
   randommode = false
-  custom_menu_title = Host Settings
+  randomgroup = 1
   randomonlyfirsttime = false
+  layout_index = 0
+  custom_menu_title = Host Settings
+  [loading_requirement_container_meta:2ea9cf6d-7b6f-4abd-8d4c-2a631a3c06db-1706647079897] = [groups:][instances:]
 }
 
 customization {
-  keepaspectratio = false
   action = backgroundoptions
+  keepaspectratio = false
 }
 
-customization {
-  identifier = %id=450975%
-  action = hidebutton
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
 }
 
-customization {
-  identifier = %id=450975%
-  action = setbuttonlabel
-  value = Load
+vanilla_button {
+  button_element_executable_block_identifier = 1ecb24d6-3640-46e7-abf0-95aa37d96767-1706647079897
+  [executable_block:1ecb24d6-3640-46e7-abf0-95aa37d96767-1706647079897][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = Load
+  element_type = vanilla_button
+  instance_identifier = 450975
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 09d56834-6606-47f1-b70c-c00592e29f96-1706647079897
+  [loading_requirement_container_meta:09d56834-6606-47f1-b70c-c00592e29f96-1706647079897] = [groups:][instances:]
+  is_hidden = true
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=330975%
-  action = setbuttonlabel
-  value = Save
+vanilla_button {
+  button_element_executable_block_identifier = aabf8466-8e5a-44a4-b743-a1bce849780f-1706647079898
+  [executable_block:aabf8466-8e5a-44a4-b743-a1bce849780f-1706647079898][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = Save
+  element_type = vanilla_button
+  instance_identifier = 330975
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = b5d49e4d-1018-45f2-b438-d01422ec9cb7-1706647079898
+  [loading_requirement_container_meta:b5d49e4d-1018-45f2-b438-d01422ec9cb7-1706647079898] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 

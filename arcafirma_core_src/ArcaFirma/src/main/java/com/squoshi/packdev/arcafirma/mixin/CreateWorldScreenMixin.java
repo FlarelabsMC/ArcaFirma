@@ -1,8 +1,8 @@
 package com.squoshi.packdev.arcafirma.mixin;
 
-import com.squoshi.packdev.arcafirma.misc.GameTab;
-import com.squoshi.packdev.arcafirma.misc.MoreTab;
-import com.squoshi.packdev.arcafirma.misc.WorldTab;
+import com.squoshi.packdev.arcafirma.misc.ui.GameTab;
+import com.squoshi.packdev.arcafirma.misc.ui.MoreTab;
+import com.squoshi.packdev.arcafirma.misc.ui.WorldTab;
 import net.minecraft.client.gui.components.*;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.components.tabs.Tab;

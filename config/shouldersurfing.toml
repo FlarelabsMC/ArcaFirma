@@ -27,20 +27,20 @@
 	center_camera_when_looking_down_angle = 15.0
 	#The angle at which the player will no longer be rendered when looking up. Set to 0 to disable.
 	#Range: 0.0 ~ 90.0
-	hide_player_when_looking_up_angle = 15.0
+	hide_player_when_looking_up_angle = 90.0
 	#Whether or not to dynamically adjust camera offsets depending on space constraints.
 	dynamically_adjust_offsets = true
 
 	[perspective.offset]
 		#Third person camera x-offset.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		offset_x = 0.0
+		offset_x = -0.0
 		#Third person camera y-offset.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		offset_y = 1.0
 		#Third person camera z-offset.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		offset_z = 5.0
+		offset_z = 7.0
 
 		[perspective.offset.min]
 			#If x-offset is limited this is the minimum amount.
@@ -99,7 +99,7 @@
 [crosshair]
 	#Crosshair type to use for shoulder surfing.
 	#Allowed Values: ADAPTIVE, DYNAMIC, STATIC, STATIC_WITH_1PP, DYNAMIC_WITH_1PP
-	crosshair_type = "ADAPTIVE"
+	crosshair_type = "STATIC_WITH_1PP"
 	#The raytrace distance used for the dynamic crosshair.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	custom_raytrace_distance = 400.0

@@ -8,11 +8,11 @@
 	#Range: 1 ~ 10
 	server_thread = 8
 	#Range: 1 ~ 10
-	sound_engine_thread = 5
+	sound_engine_thread = 8
 	#This option is not recommended!
 	#Default is 0, which means do nothing. Will not be reset after closing the world, set to 0 and restart the game to reset.
 	#Range: 0 ~ 10
-	every_other_thread = 0
+	every_other_thread = 2
 	thread_name_blacklist = ["Thread-3"]
 
 [Debug]

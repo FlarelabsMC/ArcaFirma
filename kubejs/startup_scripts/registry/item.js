@@ -1,4 +1,4 @@
-const TickingItem = Java.loadClass('com.squoshi.packdev.arcafirma.jsaccess.TickingItem')
+const TickingItem = Java.loadClass('com.squoshi.packdev.arcafirma.item.TickingItem')
 const $Item$Properties = Java.loadClass('net.minecraft.world.item.Item$Properties')
 
 global.ArcaFirma.registry.items.ALL = []

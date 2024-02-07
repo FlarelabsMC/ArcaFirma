@@ -1,36 +1,283 @@
-type = menu
+type = fancymenu_layout
 
-customization-meta {
+layout-meta {
   identifier = org.xiaoxian.gui.GuiExitGame$GuiInGameMenuModified
-  randomgroup = 1
-  renderorder = foreground
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1706851358152
+  is_enabled = true
   randommode = false
+  randomgroup = 1
   randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:b6481370-9e62-46d4-a5f9-5c038a7d8c7d-1706851333212] = [groups:][instances:]
 }
 
 customization {
-  keepaspectratio = false
   action = backgroundoptions
+  keepaspectratio = false
 }
 
-customization {
-  identifier = %id=40%
-  action = hidebutton
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
 }
 
-customization {
-  identifier = %id=398300%
-  action = hidebutton
+vanilla_button {
+  button_element_executable_block_identifier = 1b1b98f8-3ff7-40db-a5bf-1d67eca3861d-1706647079908
+  [executable_block:1b1b98f8-3ff7-40db-a5bf-1d67eca3861d-1706647079908][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 40
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 40
+  width = 640
+  height = 9
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = c28ab022-90d0-4397-a1d2-bb2514466edc-1706647079908
+  [loading_requirement_container_meta:c28ab022-90d0-4397-a1d2-bb2514466edc-1706647079908] = [groups:][instances:]
+  is_hidden = true
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=504300%
-  action = hidebutton
+vanilla_button {
+  button_element_executable_block_identifier = ec6a7b7e-a2b4-43e0-9bd2-84c4aa1e7b49-1706647079908
+  [executable_block:ec6a7b7e-a2b4-43e0-9bd2-84c4aa1e7b49-1706647079908][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = Host Online
+  element_type = vanilla_button
+  instance_identifier = 504324
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 4
+  y = -22
+  width = 98
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 95164f03-48dc-4fa6-b73e-a78d9e0bcaf0-1706647079908
+  [loading_requirement_container_meta:95164f03-48dc-4fa6-b73e-a78d9e0bcaf0-1706647079908] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=504324%
-  action = setbuttonlabel
-  value = Host Online
+vanilla_button {
+  button_element_executable_block_identifier = 6042e266-888e-4285-acf2-dd778f2f4117-1706739849505
+  [executable_block:6042e266-888e-4285-acf2-dd778f2f4117-1706739849505][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 398252
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -102
+  y = -46
+  width = 204
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 7e063f24-d7ee-4402-9311-984aea8df622-1706739849505
+  [loading_requirement_container_meta:7e063f24-d7ee-4402-9311-984aea8df622-1706739849505] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 534d967e-ce11-45ba-a72e-8d7573d4a4dd-1706647079908
+  [executable_block:534d967e-ce11-45ba-a72e-8d7573d4a4dd-1706647079908][type:generic] = [executables:]
+  backgroundnormal = [source:local]/config/fancymenu/assets/menu/fabric_config.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/menu/fabric_config_selected.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = vanilla_button
+  instance_identifier = 504300
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-right
+  x = -22
+  y = -22
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 4aff0e99-172b-4241-b01e-4dc849c267cc-1706647079908
+  [loading_requirement_container_meta:4aff0e99-172b-4241-b01e-4dc849c267cc-1706647079908] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = d50de098-213c-4fbe-bb9e-14542b1e79b7-1706739849505
+  [executable_block:d50de098-213c-4fbe-bb9e-14542b1e79b7-1706739849505][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 398372
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -102
+  y = 27
+  width = 204
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 26cb0d62-bb83-4249-ae2b-1e82ed3805da-1706739849505
+  [loading_requirement_container_meta:26cb0d62-bb83-4249-ae2b-1e82ed3805da-1706739849505] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = fa956001-6cd3-4644-b788-db87df338504-1706647079908
+  [executable_block:fa956001-6cd3-4644-b788-db87df338504-1706647079908][type:generic] = [executables:]
+  backgroundnormal = [source:local]/config/fancymenu/assets/menu/forge_config.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/menu/forge_config_selected.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = vanilla_button
+  instance_identifier = 398348
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-right
+  x = -43
+  y = -22
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 5092d7da-aab6-4b14-82bd-7ec08041b14f-1706647079908
+  [loading_requirement_container_meta:5092d7da-aab6-4b14-82bd-7ec08041b14f-1706647079908] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 17e403c5-e7c2-46f9-8ed8-3debcb97c47d-1706739849505
+  [executable_block:17e403c5-e7c2-46f9-8ed8-3debcb97c47d-1706739849505][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 398276
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -102
+  y = 2
+  width = 98
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = cd188541-f9c7-40d4-8394-08014208ee04-1706739849505
+  [loading_requirement_container_meta:cd188541-f9c7-40d4-8394-08014208ee04-1706739849505] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 64aa9a3a-f145-4258-bc72-d00c25b4fe76-1706739849505
+  [executable_block:64aa9a3a-f145-4258-bc72-d00c25b4fe76-1706739849505][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 504276
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 4
+  y = 2
+  width = 98
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 340667e9-9e7a-4b09-a602-767cd80c1a78-1706739849505
+  [loading_requirement_container_meta:340667e9-9e7a-4b09-a602-767cd80c1a78-1706739849505] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = d064b59d-ec6d-4938-ba8f-f3bdf8871872-1706647079908
+  [executable_block:d064b59d-ec6d-4938-ba8f-f3bdf8871872-1706647079908][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 398300
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 218
+  y = 136
+  width = 98
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = cbaeb664-e7b7-4f2b-8c8c-92d713ae8319-1706647079908
+  [loading_requirement_container_meta:cbaeb664-e7b7-4f2b-8c8c-92d713ae8319-1706647079908] = [groups:][instances:]
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 983b00e2-00af-4583-bb1f-a3602881a766-1706739849505
+  [executable_block:983b00e2-00af-4583-bb1f-a3602881a766-1706739849505][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 398324
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -102
+  y = -22
+  width = 98
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = a9482c6e-580c-4089-9bfe-bdc4b93f3e6b-1706739849505
+  [loading_requirement_container_meta:a9482c6e-580c-4089-9bfe-bdc4b93f3e6b-1706739849505] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 

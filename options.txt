@@ -16,14 +16,14 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:true
 touchscreen:false
-fullscreen:true
+fullscreen:false
 bobView:false
 toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 mouseSensitivity:0.5
-fov:0.0
+fov:-0.125
 screenEffectScale:1.0
 fovEffectScale:0.0
 darknessEffectScale:1.0
@@ -31,19 +31,19 @@ glintSpeed:0.5
 glintStrength:0.75
 damageTiltStrength:0.0
 highContrast:false
-gamma:0.0
-renderDistance:10
+gamma:1.0
+renderDistance:12
 simulationDistance:5
 entityDistanceScaling:1.5
 guiScale:3
 particles:1
-maxFps:260
+maxFps:240
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
-biomeBlendRadius:7
+biomeBlendRadius:3
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","firmalife_data"]
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","firmalife_data","Moonlight Mods Dynamic Assets","fabric"]
 incompatibleResourcePacks:["firmalife_data"]
 lastServer:
 lang:en_us
@@ -64,7 +64,7 @@ chatHeightUnfocused:1.0
 chatScale:1.0
 chatWidth:0.39436619718309857
 notificationDisplayTime:1.0
-mipmapLevels:4
+mipmapLevels:3
 useNativeTransport:true
 mainHand:"right"
 attackIndicator:0
@@ -103,7 +103,7 @@ key_key.command:key.keyboard.slash
 key_key.socialInteractions:key.keyboard.unknown
 key_key.screenshot:key.keyboard.f2
 key_key.togglePerspective:key.keyboard.unknown
-key_key.smoothCamera:key.keyboard.unknown
+key_key.smoothCamera:key.keyboard.f6
 key_key.fullscreen:key.keyboard.f11
 key_key.spectatorOutlines:key.keyboard.unknown
 key_key.swapOffhand:key.keyboard.f
@@ -119,39 +119,23 @@ key_key.hotbar.6:key.keyboard.unknown
 key_key.hotbar.7:key.keyboard.unknown
 key_key.hotbar.8:key.keyboard.unknown
 key_key.hotbar.9:key.keyboard.unknown
-key_keybind.name.ESSENTIAL_FRIENDS:key.keyboard.unknown
-key_keybind.name.COSMETIC_STUDIO:key.keyboard.unknown
-key_keybind.name.SCREENSHOT_MANAGER:key.keyboard.unknown
-key_keybind.name.COSMETICS_VISIBILITY_TOGGLE:key.keyboard.unknown
-key_keybind.name.CHAT_PEEK:key.keyboard.unknown
-key_keybind.name.INVITE_FRIENDS:key.keyboard.unknown
-key_keybind.name.EMOTE_WHEEL:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_1:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_2:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_3:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_4:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_5:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_6:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_7:key.keyboard.unknown
-key_keybind.name.EMOTE_SLOT_8:key.keyboard.unknown
-key_keybind.name.ZOOM:key.keyboard.unknown
 key_[Forgery] Toggle/Hold Sprint:key.keyboard.unknown
 key_[Forgery] Toggle Stance:key.keyboard.unknown
-key_inventorio.keys.use_utility:key.keyboard.keypad.2
+key_inventorio.keys.use_utility:key.keyboard.unknown
 key_inventorio.keys.next_utility:key.keyboard.r
 key_inventorio.keys.prev_utility:key.keyboard.unknown
-key_inventorio.keys.empty_utility:key.keyboard.4
-key_inventorio.keys.rocket_boost:key.keyboard.keypad.1
+key_inventorio.keys.empty_utility:key.keyboard.unknown
+key_inventorio.keys.rocket_boost:key.keyboard.unknown
 key_inventorio.keys.open_player_settings:key.keyboard.unknown
 key_inventorio.keys.open_global_settings:key.keyboard.unknown
-key_key.ktnilcks.lock.toggle.hold:key.keyboard.v
+key_key.ktnilcks.lock.toggle.hold:key.keyboard.g
 key_key.ktnilcks.lock.bypass.hold:key.keyboard.unknown
 key_key.ktnilcks.options.show:key.keyboard.unknown
 key_gui.xaero_open_map:key.keyboard.m
-key_gui.xaero_open_settings:key.keyboard.right.bracket
+key_gui.xaero_open_settings:key.keyboard.unknown
 key_gui.xaero_map_zoom_in:key.keyboard.unknown
 key_gui.xaero_map_zoom_out:key.keyboard.unknown
-key_gui.xaero_quick_confirm:key.keyboard.right.shift
+key_gui.xaero_quick_confirm:key.keyboard.unknown
 key_gui.xaero_toggle_dimension:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
@@ -159,26 +143,23 @@ key_key.modernfix.config:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.keypad.enter
 key_iris.keybind.toggleShaders:key.keyboard.keypad.add
-key_iris.keybind.shaderPackSelection:key.keyboard.o
+key_iris.keybind.shaderPackSelection:key.keyboard.unknown
+key_key.modmenu.open_menu:key.keyboard.unknown
 key_key.crawl:key.keyboard.c
-key_key.hudcompass.add_waypoint:key.keyboard.unknown
-key_key.hudcompass.remove_waypoint:key.keyboard.unknown
-key_key.hudcompass.edit_waypoints:key.keyboard.unknown
 key_key.toggleVisualItemContents:key.keyboard.unknown
 key_key.toggleSelectedItemTooltips:key.keyboard.unknown
 key_key.toggleCarriedItemTooltips:key.keyboard.unknown
 key_key.cycleLeft:key.keyboard.left
 key_key.cycleRight:key.keyboard.right
+key_nimble.keybind.frontView:key.keyboard.f4
 key_key.azurelib.reload:key.keyboard.unknown
 key_key.azurelib.scope:key.keyboard.unknown
 key_key.azurelib.fire:key.keyboard.unknown
 key_tfc.key.place_block:key.keyboard.b
-key_tfc.key.cycle_chisel_mode:key.keyboard.k
-key_tfc.key.stack_food:key.keyboard.j
-key_key.cofh.mode_change_increment:key.keyboard.v
-key_key.cofh.mode_change_decrement:key.keyboard.b
-key_key.push_to_talk:key.keyboard.left.alt
-key_key.whisper:key.keyboard.left.shift
+key_tfc.key.cycle_chisel_mode:key.keyboard.v
+key_tfc.key.stack_food:key.keyboard.k
+key_key.push_to_talk:key.mouse.5
+key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.unknown
 key_key.disable_voice_chat:key.keyboard.unknown
 key_key.hide_icons:key.keyboard.unknown
@@ -193,13 +174,11 @@ key_Camera closer:key.keyboard.unknown
 key_Camera farther:key.keyboard.unknown
 key_Camera up:key.keyboard.unknown
 key_Camera down:key.keyboard.unknown
-key_Swap shoulder:key.keyboard.unknown
+key_Swap shoulder:key.keyboard.tab
 key_Toggle perspective:key.keyboard.unknown
 key_key.astikorcarts.desc:key.keyboard.h
-key_Reload Menu | CTRL + ALT + :key.keyboard.keypad.add
-key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.x
 key_footwork.trance:key.keyboard.unknown
-key_cloak.shout:key.keyboard.y
+key_cloak.shout:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.arcafirma.inspect:key.keyboard.i
 key_key.arcafirma.zoom:key.keyboard.q

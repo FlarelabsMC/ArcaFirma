@@ -4,9 +4,10 @@
   "package": "com.squoshi.packdev.arcafirma.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "arcafirma.refmap.json",
-  "mixins": [],
+  "mixins": [
+    "LivingEntityRendererMixin"
+  ],
   "client": [
-    "CameraInvoker",
     "CreateWorldScreenMixin",
     "DeathScreenMixin"
   ],

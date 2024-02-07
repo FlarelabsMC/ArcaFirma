@@ -1,4 +1,4 @@
-package com.squoshi.packdev.arcafirma.misc;
+package com.squoshi.packdev.arcafirma.misc.ui;
 
 import net.minecraft.client.gui.components.tabs.GridLayoutTab;
 import net.minecraft.network.chat.Component;

@@ -88,6 +88,17 @@
         "value": 1024
       }
     },
+    "projectile_damage:generic": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "footwork:spirit_regen": {
       "enabled": false,
       "min": {
@@ -361,6 +372,17 @@
       "max": {
         "default": 5,
         "value": 1000000
+      }
+    },
+    "random_crits:critchance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "lodestone:magic_resistance": {

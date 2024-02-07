@@ -38,6 +38,8 @@ ClientEvents.init(event => {
     let $KeyMapping = Java.loadClass('net.minecraft.client.KeyMapping')
     let $ToggleKeyMapping = Java.loadClass('net.minecraft.client.ToggleKeyMapping')
     let $GLFWKey = Java.loadClass('org.lwjgl.glfw.GLFW')
+    let $OnlineUtils = Java.loadClass('com.squoshi.packdev.arcafirma.utils.OnlineUtils')
+    let $FileUtils = Java.loadClass('com.squoshi.packdev.arcafirma.utils.FileUtils')
 
     global['keys'] = {}
 
@@ -47,4 +49,14 @@ ClientEvents.init(event => {
     Object.keys(global['keys']).forEach(key => {
         $KeyMappingRegistry.register(global.keys[key])
     })
+
+    if ($OnlineUtils.checkOnlineStatus()) {
+        global.LOGGER.info('Internet connected! ArcaFirma can initialize online features.')
+        global.isOnline = true
+    } else {
+        global.LOGGER.info('Internet not connected! ArcaFirma cannot initialize online features.')
+        global.isOnline = false
+    }
+
+    JsonIO.write('online_status.json', { isOnline: global.isOnline })
 })
