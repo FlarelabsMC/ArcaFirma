@@ -13,8 +13,17 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import org.jetbrains.annotations.NotNull;
 
 public class FileUtils {
+    private static boolean validPath(Path path) {
+        path = Path.of(startPathFromModpackInstance(path.toString()));
+        return path.normalize().toAbsolutePath().startsWith(FMLPaths.GAMEDIR.get().normalize().toAbsolutePath());
+    }
+
     public static boolean fileExists(String path) {
-        return new File(path).exists();
+        path = startPathFromModpackInstance(path);
+        if (validPath(Path.of(path))) {
+            return new File(path).exists();
+        }
+        return false;
     }
 
     public static String startPathFromModpackInstance(String path) {
@@ -36,7 +45,7 @@ public class FileUtils {
         );
         URL url1 = new URL(url);
         path = startPathFromModpackInstance(path);
-        if (!Path.of(path).normalize().toAbsolutePath().startsWith(FMLPaths.GAMEDIR.get().toString().replace("\\", "/"))) {
+        if (!validPath(Path.of(path))) {
             throw new IOException("Invalid path, please stay within the modpack instance directory!");
         }
         if (url.isEmpty()
@@ -60,7 +69,8 @@ public class FileUtils {
                         org.apache.commons.io.FileUtils.copyInputStreamToFile(in, file);
                         ArcaFirma.LOGGER.info("Downloaded file: " + path);
                     } else {
-                        file.delete();
+                        ArcaFirma.LOGGER.info("Downloaded file's extension is not whitelisted: " + path);
+                        if (file.exists()) file.delete();
                     }
                 }
             } catch (Exception e) {
@@ -79,5 +89,17 @@ public class FileUtils {
                 e.printStackTrace();
             }
         }).start();
+    }
+
+    public static void downloadFile(@NotNull String url, String path, boolean async) {
+        if (async) {
+            asyncDownloadFileSafe(url, path);
+        } else {
+            try {
+                downloadFileSafe(url, path);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
