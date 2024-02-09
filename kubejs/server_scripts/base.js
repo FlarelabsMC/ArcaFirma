@@ -73,11 +73,16 @@ PlayerEvents.tick(event => {
             player.persistentData.inspectCooldown--
         }
     }
+})
+
+PlayerEvents.respawned(event => {
+    const { player } = event
     setAttribute(player, 'forge:step_height_addition', 0.5)
 })
 
 PlayerEvents.loggedIn(event => {
     const { player } = event
+    setAttribute(player, 'forge:step_height_addition', 0.5)
     if (!player.persistentData.firstjoin) {
         for (let i = 1; i < 61; i++) {
             Utils.server.scheduleInTicks(i, () => {

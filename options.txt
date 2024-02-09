@@ -37,7 +37,7 @@ simulationDistance:5
 entityDistanceScaling:1.5
 guiScale:3
 particles:1
-maxFps:240
+maxFps:260
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
@@ -47,7 +47,7 @@ resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","firmalif
 incompatibleResourcePacks:["firmalife_data"]
 lastServer:
 lang:en_us
-soundDevice:""
+soundDevice:"OpenAL Soft on Speakers (Realtek(R) Audio)"
 chatVisibility:0
 chatOpacity:0.7323943661971831
 chatLineSpacing:0.0
@@ -180,6 +180,7 @@ key_key.astikorcarts.desc:key.keyboard.h
 key_footwork.trance:key.keyboard.unknown
 key_cloak.shout:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
+key_key.observable.profile:key.keyboard.right.alt
 key_key.arcafirma.inspect:key.keyboard.i
 key_key.arcafirma.zoom:key.keyboard.q
 soundCategory_master:1.0
